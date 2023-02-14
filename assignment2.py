@@ -11,7 +11,7 @@ def downloadData(url):
     return csvData
 
 def error_logger(count, id_num):
-    '''Creates a log file for improperly formatted data.'''
+    '''Creates a log file for incorrect data.'''
     LOG_FILENAME = 'errors.log'
     logging.basicConfig(filename=LOG_FILENAME, level=logging.ERROR)
     assignment2 = logging.getLogger('assignment2')
